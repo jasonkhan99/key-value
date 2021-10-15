@@ -23,9 +23,9 @@ _This command line tool will store and fetch values given a key and value which 
 
 ## Setup/Installation Requirements
 
-* _Visit the following link:_
+* _Visit the following link: https://github.com/jasonkhan99/key-value_
 * _Clone the repository to your desired directory._
-
+* _Type `npm install`, then `key-value` into the terminal._
 ## Known Bugs
 
 _No Known Bugs_
@@ -36,9 +36,11 @@ _https://github.com/jasonkhan99_
 
 ## Technologies Used
 
-Javascript
-Node.js
-Markdown
+Javascript,
+Node.js,
+Markdown,
+Jest,
+Babel,
 
 ### License
 
