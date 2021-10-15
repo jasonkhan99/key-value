@@ -12,10 +12,12 @@ function main() { rl.question("> ", function(input) {
   let inputFilter = input.split(" ").filter(c => c).join(" ");
   if (inputFilter.substring(0, 3).toLowerCase() === "put") {
     func.storage.put(inputFilter.split(" ")[1], inputFilter.split(" ")[2]);
-    console.log(`ok`);
-  }
-  if (inputFilter.substring(0, 5).toLowerCase() === "fetch") {
+    console.log("ok");
+  } else if (inputFilter.substring(0, 5).toLowerCase() === "fetch") {
     console.log(func.storage[inputFilter.split(" ")[1]]);
+  } else if (inputFilter.substring(0, 4).toLowerCase() === "exit") {
+    console.log("Bye!");
+    process.exit();
   }
   main();
 })};
